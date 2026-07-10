@@ -1,0 +1,114 @@
+---
+
+import Layout from '../layouts/BlogPost.astro';
+---
+
+<Layout
+	title="Contact  Book Appointment | Luxe Salon Dwarka"
+	description="Contact Luxe Salon Dwarka or book your appointment online. Located in Sector 6, Dwarka, New Delhi. Call, WhatsApp or fill our contact form."
+	pubDate={new Date('August 08 2021')}
+
+>
+<main>
+
+  <section class="page-header">
+    <div class="container">
+      <span class="eyebrow">Contact Us</span>
+      <h1>Let's get your appointment booked.</h1>
+      <p class="lede">Call, WhatsApp, or fill in the form below and our front desk will confirm your slot within a few hours.</p>
+    </div>
+  </section>
+
+  <section class="section" id="book" style="padding-top:0;">
+    <div class="container">
+      <div class="grid grid-2" style="gap:56px; align-items:flex-start;">
+
+        <!-- CONTACT INFO -->
+        <div class="reveal">
+          <svg class="part-line" viewBox="0 0 64 20"><path d="M2 16 Q 20 2, 32 10 T 62 6"/></svg>
+          <span class="eyebrow">Reach Us Directly</span>
+          <h2 style="margin-bottom:28px;">Salon details</h2>
+          <ul class="info-list">
+            <li>
+              <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <div><strong>Salon Address</strong><span>Shop 14, Sector 6 Market, Dwarka, New Delhi &ndash; 110075</span></div>
+            </li>
+            <li>
+              <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+              <div><strong>Phone Number</strong><span>+91 98100 00000</span></div>
+            </li>
+            <li>
+              <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6z"/><path d="m22 6-10 7L2 6"/></svg></span>
+              <div><strong>Email Address</strong><span>hello@luxesalondwarka.com</span></div>
+            </li>
+            <li>
+              <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+              <div><strong>Working Hours</strong><span>Mon &ndash; Sun: 10:00 AM &ndash; 8:30 PM</span><br><span>Tuesday: Closed</span></div>
+            </li>
+          </ul>
+
+          <div class="map-frame" style="margin-top:32px;">
+            <iframe src="https://www.google.com/maps?q=Dwarka+Sector+6,New+Delhi&output=embed" loading="lazy" title="Luxe Salon Dwarka location map" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <div class="reveal">
+          <div class="card" style="padding:36px 32px;">
+            <h2 style="font-size:24px;margin-bottom:6px;">Book your appointment</h2>
+            <p style="color:var(--text-muted);font-size:14.5px;margin-bottom:24px;">Fields marked required help us prepare for your visit.</p>
+
+            <div class="form-success">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Thank you! Your request has been received — our team will call to confirm your slot shortly.</span>
+            </div>
+
+            <form id="contact-form" novalidate>
+              <div class="form-row two">
+                <div class="form-field">
+                  <label for="name">Full Name *</label>
+                  <input type="text" id="name" name="name" placeholder="Your full name" required>
+                  <span class="error-msg"></span>
+                </div>
+                <div class="form-field">
+                  <label for="phone">Phone Number *</label>
+                  <input type="tel" id="phone" name="phone" placeholder="98100 00000" required>
+                  <span class="error-msg"></span>
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com">
+                <span class="error-msg"></span>
+              </div>
+              <div class="form-field">
+                <label for="service">Service Interested In *</label>
+                <select id="service" name="service" required>
+                  <option value="">Select a service</option>
+                  <option value="haircut">Haircut &amp; Styling</option>
+                  <option value="colour">Hair Colouring</option>
+                  <option value="keratin">Keratin Treatment</option>
+                  <option value="facial">Facial / Skin Treatment</option>
+                  <option value="waxing">Waxing / Threading</option>
+                  <option value="bridal">Bridal Makeup</option>
+                  <option value="party">Party / HD Makeup</option>
+                </select>
+                <span class="error-msg"></span>
+              </div>
+              <div class="form-field">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" placeholder="Preferred date, time, and any details about what you're looking for" required></textarea>
+                <span class="error-msg"></span>
+              </div>
+              <button type="submit" class="btn btn-primary block">Send Request<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+</Layout>

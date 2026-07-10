@@ -1,49 +1,817 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import { SITE_DESCRIPTION } from "../consts";
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This template
-				serves as a lightweight, minimally-styled starting point for anyone looking to build a personal
-				website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to
-				<a href="https://docs.astro.build/">read the docs</a>
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
+  <head>
+    <BaseHead
+      title={"Luxe Salon Dwarka | Premium Hair, Beauty  Bridal Studio in Dwarka, New Delhi"}
+      description={"Luxe Salon Dwarka is a premium hair, beauty and bridal studio in Dwarka, New Delhi offering expert haircuts, colouring, keratin, facials, waxing and bridal makeup. Book your appointment today."}
+    />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Premium Salon &middot; Dwarka, New Delhi</span
+            >
+            <h1>Precision hair. Considered beauty. Made for Dwarka.</h1>
+            <p class="lede">
+              Luxe Salon Dwarka pairs internationally trained stylists with
+              premium products to deliver hair, skin and bridal artistry that
+              holds up in daylight, on camera and everywhere in between.
+            </p>
+            <div class="hero-actions">
+              <a href="/contact#book" class="btn btn-dark"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  ><rect x="3" y="4" width="18" height="18" rx="2"></rect><line
+                    x1="16"
+                    y1="2"
+                    x2="16"
+                    y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line
+                    x1="3"
+                    y1="10"
+                    x2="21"
+                    y2="10"></line></svg
+                >Book an Appointment</a
+              >
+              <a href="/services" class="btn btn-ghost"
+                >View Services<svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  ><line x1="5" y1="12" x2="19" y2="12"></line><polyline
+                    points="12 5 19 12 12 19"></polyline></svg
+                ></a
+              >
+            </div>
+            <div class="hero-stats">
+              <div><strong>12+</strong><span>Years in Dwarka</span></div>
+              <div><strong>9,400+</strong><span>Clients Styled</span></div>
+              <div><strong>4.9/5</strong><span>Average Rating</span></div>
+            </div>
+          </div>
+          <div class="hero-media">
+            <div class="frame">
+              <img
+                src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=80"
+                alt="Stylist finishing a client's blow-dry at Luxe Salon Dwarka"
+                width="900"
+                height="1125"
+                loading="eager"
+              />
+            </div>
+            <div class="hero-floating reveal">
+              <span class="icon-badge"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  ><path d="M12 15a7 7 0 1 0 0-14 7 7 0 0 0 0 14Z"></path><path
+                    d="m9 11 2 2 4-4"></path></svg
+                ></span
+              >
+              <div>
+                <strong>Sulphate-free colour</strong><span
+                  >Ammonia-free formulas only</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY CHOOSE US -->
+      <section class="section tint">
+        <div class="container">
+          <div class="section-head center">
+            <svg class="part-line" viewBox="0 0 64 20"
+              ><path d="M2 16 Q 20 2, 32 10 T 62 6"></path></svg
+            >
+            <span class="eyebrow">Why Choose Us</span>
+            <h2>The details that set a Luxe visit apart</h2>
+            <p>
+              From the products on our shelves to the way our stylists listen
+              before they cut, every part of your visit is designed around one
+              outcome: you leaving looking like the best version of yourself.
+            </p>
+          </div>
+          <div class="grid grid-4">
+            <div class="card reveal">
+              <span class="icon-badge"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  ><path d="M6 3h12l4 6-10 12L2 9Z"></path><path
+                    d="M11 3 8 9l4 12 4-12-3-6"></path><path d="M2 9h20"
+                  ></path></svg
+                ></span
+              >
+              <h3>Premium Products</h3>
+              <p>
+                We work exclusively with internationally certified haircare and
+                skincare brands, chosen for safety and long-term hair health.
+              </p>
+            </div>
+            <div class="card reveal">
+              <span class="icon-badge"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  ><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"
+                  ></path><circle cx="9" cy="7" r="4"></circle><path
+                    d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path
+                    d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg
+                ></span
+              >
+              <h3>Trained Specialists</h3>
+              <p>
+                Every stylist and therapist completes ongoing certification, so
+                cutting-edge technique is always part of your service.
+              </p>
+            </div>
+            <div class="card reveal">
+              <span class="icon-badge"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  ><circle cx="12" cy="12" r="10"></circle><polyline
+                    points="12 6 12 12 16 14"></polyline></svg
+                ></span
+              >
+              <h3>On-Time, Every Time</h3>
+              <p>
+                Appointments are paced with buffer time built in, so your slot
+                starts when it's booked — no waiting rooms, no rush.
+              </p>
+            </div>
+            <div class="card reveal">
+              <span class="icon-badge"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  ><path
+                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                  ></path></svg
+                ></span
+              >
+              <h3>Hygiene First</h3>
+              <p>
+                Sanitised tools, single-use essentials and clean, spacious
+                stations — non-negotiable standards on every visit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED SERVICES -->
+      <section class="section">
+        <div class="container">
+          <div class="flex-between section-head" style="margin-bottom:40px;">
+            <div>
+              <svg class="part-line" viewBox="0 0 64 20"
+                ><path d="M2 16 Q 20 2, 32 10 T 62 6"></path></svg
+              >
+              <span class="eyebrow">Featured Services</span>
+              <h2>Signature treatments, booked most</h2>
+            </div>
+            <a href="/services" class="btn btn-ghost" style="flex-shrink:0;"
+              >All Services<svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                ><line x1="5" y1="12" x2="19" y2="12"></line><polyline
+                  points="12 5 19 12 12 19"></polyline></svg
+              ></a
+            >
+          </div>
+          <div class="grid grid-4">
+            <div class="service-card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1519415387722-a1c3bbef716c?auto=format&fit=crop&w=500&q=80"
+                alt="Precision haircut being finished at Luxe Salon Dwarka"
+                loading="lazy"
+              />
+              <div class="content">
+                <span class="tag">Hair</span><h3>Precision Haircut</h3><p>
+                  Cut and shaped to your face and lifestyle
+                </p>
+              </div>
+            </div>
+            <div class="service-card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=500&q=80"
+                alt="Balayage hair colouring service in progress"
+                loading="lazy"
+              />
+              <div class="content">
+                <span class="tag">Colour</span><h3>
+                  Global &amp; Balayage Colour
+                </h3><p>Ammonia-free colour that stays vibrant</p>
+              </div>
+            </div>
+            <div class="service-card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=500&q=80"
+                alt="Client receiving a rejuvenating facial treatment"
+                loading="lazy"
+              />
+              <div class="content">
+                <span class="tag">Skin</span><h3>Signature Facial</h3><p>
+                  Deep-cleanse and glow, tailored to skin type
+                </p>
+              </div>
+            </div>
+            <div class="service-card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=500&q=80"
+                alt="Bridal makeup artist perfecting a bride's look"
+                loading="lazy"
+              />
+              <div class="content">
+                <span class="tag">Bridal</span><h3>Bridal Makeup</h3><p>
+                  Look that lasts from mandap to midnight
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HAIR TRANSFORMATIONS -->
+      <section class="section tint">
+        <div class="container">
+          <div class="section-head center">
+            <svg class="part-line" viewBox="0 0 64 20"
+              ><path d="M2 16 Q 20 2, 32 10 T 62 6"></path></svg
+            >
+            <span class="eyebrow">Hair Transformations</span>
+            <h2>Real clients, real results</h2>
+            <p>
+              A glimpse of the colour corrections, cuts and treatments our
+              stylists have delivered for Dwarka clients this season.
+            </p>
+          </div>
+          <div class="grid grid-3">
+            <div class="masonry-item reveal" style="aspect-ratio:3/4;">
+              <img
+                src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=500&q=80"
+                alt="Client transformation with fresh layered haircut"
+                loading="lazy"
+                style="height:100%;object-fit:cover;"
+              />
+            </div>
+            <div class="masonry-item reveal" style="aspect-ratio:3/4;">
+              <img
+                src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=500&q=80"
+                alt="Close up of a precision haircut transformation"
+                loading="lazy"
+                style="height:100%;object-fit:cover;"
+              />
+            </div>
+            <div class="masonry-item reveal" style="aspect-ratio:3/4;">
+              <img
+                src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=500&q=80"
+                alt="Client with fresh balayage colour transformation"
+                loading="lazy"
+                style="height:100%;object-fit:cover;"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BEFORE / AFTER -->
+      <section class="section">
+        <div class="container">
+          <div class="grid grid-2" style="align-items:center;">
+            <div class="reveal">
+              <svg class="part-line" viewBox="0 0 64 20"
+                ><path d="M2 16 Q 20 2, 32 10 T 62 6"></path></svg
+              >
+              <span class="eyebrow">Before &amp; After</span>
+              <h2>Drag to see the difference</h2>
+              <p
+                style="margin-top:16px;color:var(--text-muted);font-size:16.5px;"
+              >
+                A keratin smoothing treatment on textured, frizz-prone hair —
+                one visit, three months of manageable, glossy strands. Slide to
+                compare.
+              </p>
+              <a
+                href="/gallery"
+                class="btn btn-dark"
+                style="margin-top:28px;"
+                >See More Transformations<svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  ><line x1="5" y1="12" x2="19" y2="12"></line><polyline
+                    points="12 5 19 12 12 19"></polyline></svg
+                ></a
+              >
+            </div>
+            <div class="ba-slider reveal">
+              <img
+                class="before-img"
+                src="https://images.unsplash.com/photo-1522337094846-8a8d6b1a2b0f?auto=format&fit=crop&w=700&q=80"
+                alt="Hair before keratin smoothing treatment"
+              />
+              <img
+                class="after-img"
+                src="https://images.unsplash.com/photo-1595473465036-52c0a3f39c7c?auto=format&fit=crop&w=700&q=80"
+                alt="Hair after keratin smoothing treatment"
+              />
+              <span class="ba-label before">Before</span>
+              <span class="ba-label after">After</span>
+              <div class="divider"></div>
+              <div class="handle">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#111827"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  ><polyline
+                    points="9 18 15 12 9 6"
+                    transform="rotate(180 12 12)"></polyline><polyline
+                    points="15 6 9 12 15 18"></polyline></svg>
+              </div>
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                aria-label="Drag to compare before and after image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="section tint">
+        <div class="container">
+          <div class="section-head center">
+            <svg class="part-line" viewBox="0 0 64 20"
+              ><path d="M2 16 Q 20 2, 32 10 T 62 6"></path></svg
+            >
+            <span class="eyebrow">Customer Testimonials</span>
+            <h2>Trusted by Dwarka, one appointment at a time</h2>
+          </div>
+          <div class="grid grid-3">
+            <div class="testimonial-card reveal">
+              <div class="stars">
+                <svg viewBox="0 0 24 24"
+                  ><polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  ></polygon></svg
+                >
+                <svg viewBox="0 0 24 24"
+                  ><polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  ></polygon></svg
+                >
+                <svg viewBox="0 0 24 24"
+                  ><polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  ></polygon></svg
+                >
+                <svg viewBox="0 0 24 24"
+                  ><polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  ></polygon></svg
+                >
+                <svg viewBox="0 0 24 24"
+                  ><polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  ></polygon></svg
+                >
+              </div>
+              <p class="quote">
+                My colour correction here finally fixed two years of box-dye
+                damage. The consultation alone was more thorough than any salon
+                I've tried in Delhi.
+              </p>
+              <div class="testimonial-person">
+                <img
+                  src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80"
+                  alt="Portrait of Ritika Malhotra"
+                  loading="lazy"
+                />
+                <div>
+                  <strong>Ritika Malhotra</strong><span>Sector 12, Dwarka</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card reveal">
+              <div class="stars">
+                <svg viewBox="0 0 24 24"
+                  ><polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  ></polygon></svg
+                >
+                <svg viewBox="0 0 24 24"
+                  ><polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  ></polygon></svg
+                >
+                <svg viewBox="0 0 24 24"
+                  ><polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  ></polygon></svg
+                >
+                <svg viewBox="0 0 24 24"
+                  ><polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  ></polygon></svg
+                >
+                <svg viewBox="0 0 24 24"
+                  ><polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  ></polygon></svg
+                >
+              </div>
+              <p class="quote">
+                Booked bridal makeup for my sister's wedding — three functions,
+                three completely different looks, and every single one held up
+                on camera. Worth every rupee.
+              </p>
+              <div class="testimonial-person">
+                <img
+                  src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=100&q=80"
+                  alt="Portrait of Ananya Sharma"
+                  loading="lazy"
+                />
+                <div>
+                  <strong>Ananya Sharma</strong><span>Palam Vihar</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card reveal">
+              <div class="stars">
+                <svg viewBox="0 0 24 24"
+                  ><polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  ></polygon></svg
+                >
+                <svg viewBox="0 0 24 24"
+                  ><polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  ></polygon></svg
+                >
+                <svg viewBox="0 0 24 24"
+                  ><polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  ></polygon></svg
+                >
+                <svg viewBox="0 0 24 24"
+                  ><polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  ></polygon></svg
+                >
+                <svg viewBox="0 0 24 24"
+                  ><polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  ></polygon></svg
+                >
+              </div>
+              <p class="quote">
+                I've had the same stylist here for three years now. She
+                remembers my history, my hair goals and never pushes treatments
+                I don't need. That trust is rare.
+              </p>
+              <div class="testimonial-person">
+                <img
+                  src="https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?auto=format&fit=crop&w=100&q=80"
+                  alt="Portrait of Karan Vij"
+                  loading="lazy"
+                />
+                <div>
+                  <strong>Karan Vij</strong><span>Dwarka Sector 6</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TEAM HIGHLIGHTS -->
+      <section class="section">
+        <div class="container">
+          <div class="section-head center">
+            <svg class="part-line" viewBox="0 0 64 20"
+              ><path d="M2 16 Q 20 2, 32 10 T 62 6"></path></svg
+            >
+            <span class="eyebrow">Team Highlights</span>
+            <h2>The hands you can trust with your look</h2>
+          </div>
+          <div class="grid grid-4">
+            <div class="team-card reveal">
+              <div class="photo">
+                <img
+                  src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80"
+                  alt="Simran Kaur, Creative Director at Luxe Salon Dwarka"
+                  loading="lazy"
+                />
+              </div>
+              <h3>Simran Kaur</h3>
+              <span>Creative Director</span>
+              <p>14 years, colour &amp; precision cutting specialist</p>
+            </div>
+            <div class="team-card reveal">
+              <div class="photo">
+                <img
+                  src="https://images.unsplash.com/photo-1595959183082-7b570b7e08e2?auto=format&fit=crop&w=400&q=80"
+                  alt="Aarav Mehta, Senior Hairstylist at Luxe Salon Dwarka"
+                  loading="lazy"
+                />
+              </div>
+              <h3>Aarav Mehta</h3>
+              <span>Senior Hairstylist</span>
+              <p>Men's grooming &amp; textured hair expert</p>
+            </div>
+            <div class="team-card reveal">
+              <div class="photo">
+                <img
+                  src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=400&q=80"
+                  alt="Neha Kapoor, Bridal Makeup Artist at Luxe Salon Dwarka"
+                  loading="lazy"
+                />
+              </div>
+              <h3>Neha Kapoor</h3>
+              <span>Bridal Makeup Artist</span>
+              <p>HD &amp; airbrush bridal specialist</p>
+            </div>
+            <div class="team-card reveal">
+              <div class="photo">
+                <img
+                  src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=400&q=80"
+                  alt="Divya Rathi, Skin & Beauty Therapist at Luxe Salon Dwarka"
+                  loading="lazy"
+                />
+              </div>
+              <h3>Divya Rathi</h3>
+              <span>Skin &amp; Beauty Therapist</span>
+              <p>Facials, cleanups &amp; skin treatments</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section tint">
+        <div class="container">
+          <div class="grid grid-2" style="gap:56px;">
+            <div>
+              <svg class="part-line" viewBox="0 0 64 20"
+                ><path d="M2 16 Q 20 2, 32 10 T 62 6"></path></svg
+              >
+              <span class="eyebrow">FAQ</span>
+              <h2>Questions we hear most</h2>
+              <p
+                style="margin-top:16px;color:var(--text-muted);font-size:16.5px;"
+              >
+                Can't find your answer? Reach out directly and our team will
+                respond within the day.
+              </p>
+              <a
+                href="/contact"
+                class="btn btn-dark"
+                style="margin-top:24px;">Contact Us</a
+              >
+            </div>
+            <div class="accordion">
+              <div class="accordion-item" data-open="false">
+                <button class="accordion-trigger" aria-expanded="false"
+                  >Do I need to book in advance?<span class="plus"
+                    ><svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      ><line x1="12" y1="5" x2="12" y2="19"></line><line
+                        x1="5"
+                        y1="12"
+                        x2="19"
+                        y2="12"></line></svg
+                    ></span
+                  ></button
+                >
+                <div class="accordion-panel">
+                  <div class="inner">
+                    We recommend booking 2-3 days ahead for haircuts and colour,
+                    and 3-4 weeks ahead for bridal packages to secure your
+                    preferred stylist and time slot.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item" data-open="false">
+                <button class="accordion-trigger" aria-expanded="false"
+                  >What products do you use?<span class="plus"
+                    ><svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      ><line x1="12" y1="5" x2="12" y2="19"></line><line
+                        x1="5"
+                        y1="12"
+                        x2="19"
+                        y2="12"></line></svg
+                    ></span
+                  ></button
+                >
+                <div class="accordion-panel">
+                  <div class="inner">
+                    We use internationally certified, ammonia-free and
+                    sulphate-free haircare lines, along with
+                    dermatologist-tested skincare brands for all facial and
+                    beauty services.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item" data-open="false">
+                <button class="accordion-trigger" aria-expanded="false"
+                  >Do you offer trials for bridal makeup?<span class="plus"
+                    ><svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      ><line x1="12" y1="5" x2="12" y2="19"></line><line
+                        x1="5"
+                        y1="12"
+                        x2="19"
+                        y2="12"></line></svg
+                    ></span
+                  ></button
+                >
+                <div class="accordion-panel">
+                  <div class="inner">
+                    Yes, every bridal package includes one complimentary trial
+                    session so we can finalise your look, hairstyle and outfit
+                    pairing well before the big day.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item" data-open="false">
+                <button class="accordion-trigger" aria-expanded="false"
+                  >Is parking available at the salon?<span class="plus"
+                    ><svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      ><line x1="12" y1="5" x2="12" y2="19"></line><line
+                        x1="5"
+                        y1="12"
+                        x2="19"
+                        y2="12"></line></svg
+                    ></span
+                  ></button
+                >
+                <div class="accordion-panel">
+                  <div class="inner">
+                    Yes, complimentary parking is available directly outside our
+                    Dwarka studio for all clients with a confirmed appointment.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item" data-open="false">
+                <button class="accordion-trigger" aria-expanded="false"
+                  >Can I reschedule my appointment?<span class="plus"
+                    ><svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      ><line x1="12" y1="5" x2="12" y2="19"></line><line
+                        x1="5"
+                        y1="12"
+                        x2="19"
+                        y2="12"></line></svg
+                    ></span
+                  ></button
+                >
+                <div class="accordion-panel">
+                  <div class="inner">
+                    Absolutely — call or WhatsApp us at least 4 hours before
+                    your slot and we'll happily move it to a time that works
+                    better for you.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- APPOINTMENT CTA -->
+      <section class="section">
+        <div class="container">
+          <div class="cta-band reveal">
+            <svg
+              class="strands"
+              viewBox="0 0 800 300"
+              preserveAspectRatio="none"
+              ><path
+                d="M0 250 Q 200 150 400 220 T 800 180"
+                stroke="#2DD4BF"
+                stroke-width="1.5"
+                fill="none"></path><path
+                d="M0 180 Q 200 260 400 150 T 800 260"
+                stroke="#2DD4BF"
+                stroke-width="1.5"
+                fill="none"></path><path
+                d="M0 90 Q 220 40 420 110 T 800 60"
+                stroke="#2DD4BF"
+                stroke-width="1.5"
+                fill="none"></path></svg
+            >
+            <div class="cta-band-inner">
+              <div>
+                <h2>Your next look starts with one appointment.</h2>
+                <p>
+                  Walk in with a reference photo or an idea — leave with a style
+                  built for how you actually live.
+                </p>
+              </div>
+              <div class="cta-actions">
+                <a href="/contact#book" class="btn btn-primary"
+                  >Book Appointment</a
+                >
+                <a href="/tel:+911145678900" class="btn btn-outline"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    ><path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+                    ></path></svg
+                  >Call Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
 </html>

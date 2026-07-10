@@ -1,0 +1,214 @@
+---
+import AboutHeroImage from '../assets/blog-placeholder-about.jpg';
+import Layout from '../layouts/BlogPost.astro';
+---
+
+<Layout
+	title="Pricing | Luxe Salon Dwarka"
+	description="Transparent pricing for hair, beauty, bridal packages and memberships at Luxe Salon Dwarka, New Delhi."
+	pubDate={new Date('August 08 2021')}
+	heroImage={AboutHeroImage}
+>
+<main>
+
+  <section class="page-header">
+    <div class="container">
+      <span class="eyebrow">Pricing</span>
+      <h1>Clear pricing, confirmed before you sit down.</h1>
+      <p class="lede">Prices below are starting rates — your stylist will confirm the exact cost based on hair length, density and the look you want, before starting any service.</p>
+    </div>
+  </section>
+
+  <!-- HAIR PRICING -->
+  <section class="section" id="hair-pricing" style="padding-top:0;">
+    <div class="container">
+      <div class="section-head">
+        <svg class="part-line" viewBox="0 0 64 20"><path d="M2 16 Q 20 2, 32 10 T 62 6"/></svg>
+        <span class="eyebrow">Hair Services Pricing</span>
+        <h2>Cuts, colour &amp; treatments</h2>
+      </div>
+      <div class="pricing-table reveal">
+        <div class="pricing-row">
+          <div><div class="name">Haircut &amp; Style</div><div class="desc">Consultation, wash, cut and blow-dry finish</div></div>
+          <div class="price">From &#8377;799</div>
+        </div>
+        <div class="pricing-row">
+          <div><div class="name">Hair Styling (Event)</div><div class="desc">Curls, updos or event-ready blow-dry</div></div>
+          <div class="price">From &#8377;999</div>
+        </div>
+        <div class="pricing-row">
+          <div><div class="name">Global Hair Colour</div><div class="desc">Full-length ammonia-free colour</div></div>
+          <div class="price">From &#8377;2,499</div>
+        </div>
+        <div class="pricing-row">
+          <div><div class="name">Balayage / Highlights</div><div class="desc">Hand-painted or foil highlights</div></div>
+          <div class="price">From &#8377;4,999</div>
+        </div>
+        <div class="pricing-row">
+          <div><div class="name">Hair Spa</div><div class="desc">Deep-conditioning scalp &amp; strand therapy</div></div>
+          <div class="price">From &#8377;1,499</div>
+        </div>
+        <div class="pricing-row">
+          <div><div class="name">Keratin Treatment</div><div class="desc">Smoothing treatment, lasts up to 4 months</div></div>
+          <div class="price">From &#8377;6,999</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEAUTY PRICING -->
+  <section class="section tint" id="beauty-pricing">
+    <div class="container">
+      <div class="section-head">
+        <svg class="part-line" viewBox="0 0 64 20"><path d="M2 16 Q 20 2, 32 10 T 62 6"/></svg>
+        <span class="eyebrow">Beauty Services Pricing</span>
+        <h2>Skin &amp; grooming</h2>
+      </div>
+      <div class="pricing-table reveal">
+        <div class="pricing-row">
+          <div><div class="name">Classic Facial</div><div class="desc">Cleanse, exfoliate, mask &amp; massage</div></div>
+          <div class="price">From &#8377;1,299</div>
+        </div>
+        <div class="pricing-row">
+          <div><div class="name">Advanced Skin Facial</div><div class="desc">Brightening or anti-ageing formulas</div></div>
+          <div class="price">From &#8377;2,199</div>
+        </div>
+        <div class="pricing-row">
+          <div><div class="name">Cleanup</div><div class="desc">Quick exfoliation &amp; glow refresh</div></div>
+          <div class="price">From &#8377;699</div>
+        </div>
+        <div class="pricing-row">
+          <div><div class="name">Full Body Waxing</div><div class="desc">Low-irritation, dermatologically tested wax</div></div>
+          <div class="price">From &#8377;1,599</div>
+        </div>
+        <div class="pricing-row">
+          <div><div class="name">Threading (Brows)</div><div class="desc">Precision brow shaping</div></div>
+          <div class="price">From &#8377;99</div>
+        </div>
+        <div class="pricing-row">
+          <div><div class="name">Pigmentation Treatment</div><div class="desc">Multi-session targeted skin treatment</div></div>
+          <div class="price">From &#8377;2,999</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRIDAL PACKAGES -->
+  <section class="section" id="bridal">
+    <div class="container">
+      <div class="section-head center">
+        <svg class="part-line" viewBox="0 0 64 20"><path d="M2 16 Q 20 2, 32 10 T 62 6"/></svg>
+        <span class="eyebrow">Bridal Packages</span>
+        <h2>For the day you've been planning</h2>
+      </div>
+      <div class="grid grid-3">
+        <div class="plan-card reveal">
+          <h3>Essential Bride</h3>
+          <div class="plan-price">&#8377;18,999<span>/ package</span></div>
+          <ul class="plan-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>HD bridal makeup, 1 look</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Bridal hairstyle with draping</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Complimentary makeup trial</li>
+          </ul>
+          <a href="/contact#book" class="btn btn-ghost block">Enquire Now</a>
+        </div>
+        <div class="plan-card featured reveal">
+          <span class="badge">Most Booked</span>
+          <h3>Signature Bride</h3>
+          <div class="plan-price">&#8377;34,999<span>/ package</span></div>
+          <ul class="plan-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Airbrush bridal makeup, 2 looks</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Bridal hairstyling &amp; draping</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Pre-bridal facial &amp; hair spa</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Two complimentary trials</li>
+          </ul>
+          <a href="/contact#book" class="btn btn-primary block">Enquire Now</a>
+        </div>
+        <div class="plan-card reveal">
+          <h3>Luxe Bride</h3>
+          <div class="plan-price">&#8377;59,999<span>/ package</span></div>
+          <ul class="plan-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>HD airbrush makeup, 3 functions</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Complete pre-bridal skin &amp; hair plan</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>On-location touch-up artist</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Unlimited trials</li>
+          </ul>
+          <a href="/contact#book" class="btn btn-ghost block">Enquire Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GROOMING PACKAGES -->
+  <section class="section tint" id="grooming">
+    <div class="container">
+      <div class="section-head">
+        <svg class="part-line" viewBox="0 0 64 20"><path d="M2 16 Q 20 2, 32 10 T 62 6"/></svg>
+        <span class="eyebrow">Grooming Packages</span>
+        <h2>For him, done properly</h2>
+      </div>
+      <div class="pricing-table reveal">
+        <div class="pricing-row">
+          <div><div class="name">Express Grooming</div><div class="desc">Haircut, beard shape &amp; hot towel finish</div></div>
+          <div class="price">From &#8377;699</div>
+        </div>
+        <div class="pricing-row">
+          <div><div class="name">Complete Grooming</div><div class="desc">Haircut, beard, facial &amp; head massage</div></div>
+          <div class="price">From &#8377;1,499</div>
+        </div>
+        <div class="pricing-row">
+          <div><div class="name">Groom-to-Be Package</div><div class="desc">Pre-wedding grooming across 3 sessions</div></div>
+          <div class="price">From &#8377;5,999</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEMBERSHIP PLANS -->
+  <section class="section" id="membership">
+    <div class="container">
+      <div class="section-head center">
+        <svg class="part-line" viewBox="0 0 64 20"><path d="M2 16 Q 20 2, 32 10 T 62 6"/></svg>
+        <span class="eyebrow">Membership Plans</span>
+        <h2>For your regular visits</h2>
+        <p>Prepaid plans built for clients who visit monthly — save on every service while keeping the same trusted stylist.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="plan-card reveal">
+          <h3>Silver Membership</h3>
+          <div class="plan-price">&#8377;4,999<span>/ year</span></div>
+          <ul class="plan-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>15% off all hair services</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>10% off beauty services</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Priority appointment slots</li>
+          </ul>
+          <a href="/contact" class="btn btn-ghost block">Join Now</a>
+        </div>
+        <div class="plan-card featured reveal">
+          <span class="badge">Best Value</span>
+          <h3>Gold Membership</h3>
+          <div class="plan-price">&#8377;8,999<span>/ year</span></div>
+          <ul class="plan-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>25% off all hair &amp; beauty services</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>2 complimentary facials per year</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Free birthday styling session</li>
+          </ul>
+          <a href="/contact" class="btn btn-primary block">Join Now</a>
+        </div>
+        <div class="plan-card reveal">
+          <h3>Platinum Membership</h3>
+          <div class="plan-price">&#8377;14,999<span>/ year</span></div>
+          <ul class="plan-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>35% off all services, all year</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Dedicated senior stylist</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Quarterly hair spa included</li>
+          </ul>
+          <a href="/contact" class="btn btn-ghost block">Join Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+</Layout>
